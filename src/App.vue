@@ -5,6 +5,8 @@ import EventComponent from './components/EventsComponent.vue'
 import ReactiveComponent from './components/ReactiveComponent.vue'
 import RefComponent from './components/RefComponent.vue'
 import ComputedPropertyComponent from './components/ComputedPropertyComponent.vue'
+import ConditionalRenderingComponent from './components/ConditionalRenderingComponent.vue'
+import VForComponents from './components/VForComponents.vue'
 </script>
 
 <template>
@@ -13,7 +15,11 @@ import ComputedPropertyComponent from './components/ComputedPropertyComponent.vu
   <!--  <EventComponent /> -->
   <!-- <ReactiveComponent /> -->
   <!-- <RefComponent /> -->
-  <ComputedPropertyComponent />
+  <!--   <ComputedPropertyComponent /> -->
+
+  <ConditionalRenderingComponent />
+
+  <VForComponents />
 </template>
 
 <style scoped></style>
