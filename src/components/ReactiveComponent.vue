@@ -1,7 +1,7 @@
 <script setup>
 import { reactive } from 'vue'
 
-/* Reactive:   Work for non-premitive data types only not for single number */
+/* Reactive: userd for creating reactive object.   Work for non-premitive data types only not for single number */
 const intialState = reactive({ vlu: { count: 0 }, users: ['jai', 'gopi'] })
 
 const changeUser = () => {
