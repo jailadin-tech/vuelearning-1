@@ -8,6 +8,14 @@ import ComputedPropertyComponent from './components/ComputedPropertyComponent.vu
 import ConditionalRenderingComponent from './components/ConditionalRenderingComponent.vue'
 import VForComponents from './components/VForComponents.vue'
 import PropsMainComponent from './components/PropsMainComponent.vue'
+import ComponentEventParentComponent from './components/ComponentEventParentComponent.vue'
+import ChildComponentEvent from './components/ComponentEvent/ChildComponentEvent.vue'
+import { ref } from 'vue'
+const registeUser = (username, email, phone) => {
+  console.log(username)
+  console.log(email)
+  console.log(phone)
+}
 </script>
 
 <template>
@@ -21,7 +29,9 @@ import PropsMainComponent from './components/PropsMainComponent.vue'
   <!--  <ConditionalRenderingComponent />
   <VForComponents /> -->
 
-  <PropsMainComponent pageTitle="Main Component for All types of Props Practise" />
+  <!-- <PropsMainComponent pageTitle="Main Component for All types of Props Practise" /> -->
+
+  <ChildComponentEvent @userRegister="registeUser" />
 </template>
 
 <style scoped></style>
