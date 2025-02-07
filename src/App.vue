@@ -7,6 +7,7 @@ import RefComponent from './components/RefComponent.vue'
 import ComputedPropertyComponent from './components/ComputedPropertyComponent.vue'
 import ConditionalRenderingComponent from './components/ConditionalRenderingComponent.vue'
 import VForComponents from './components/VForComponents.vue'
+import PropsMainComponent from './components/PropsMainComponent.vue'
 </script>
 
 <template>
@@ -17,9 +18,10 @@ import VForComponents from './components/VForComponents.vue'
   <!-- <RefComponent /> -->
   <!--   <ComputedPropertyComponent /> -->
 
-  <ConditionalRenderingComponent />
+  <!--  <ConditionalRenderingComponent />
+  <VForComponents /> -->
 
-  <VForComponents />
+  <PropsMainComponent pageTitle="Main Component for All types of Props Practise" />
 </template>
 
 <style scoped></style>
