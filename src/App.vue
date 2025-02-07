@@ -8,9 +8,12 @@ import ComputedPropertyComponent from './components/ComputedPropertyComponent.vu
 import ConditionalRenderingComponent from './components/ConditionalRenderingComponent.vue'
 import VForComponents from './components/VForComponents.vue'
 import PropsMainComponent from './components/PropsMainComponent.vue'
-import ComponentEventParentComponent from './components/ComponentEventParentComponent.vue'
 import ChildComponentEvent from './components/ComponentEvent/ChildComponentEvent.vue'
+
 import { ref } from 'vue'
+import SlotComponent from './components/SlotComponents/SlotComponent.vue'
+import FallbackContent from './components/SlotComponents/FallbackContent.vue'
+
 const registeUser = (username, email, phone) => {
   console.log(username)
   console.log(email)
@@ -31,7 +34,15 @@ const registeUser = (username, email, phone) => {
 
   <!-- <PropsMainComponent pageTitle="Main Component for All types of Props Practise" /> -->
 
-  <ChildComponentEvent @userRegister="registeUser" />
+  <!-- <ChildComponentEvent @userRegister="registeUser" /> -->
+
+  <!-- Pass content into slotcomponent -->
+  <SlotComponent>
+    <h4>Content 1</h4>
+    <h4>Content 2</h4>
+  </SlotComponent>
+  <!-- When no data/content passed then defult/fallback content will be show -->
+  <FallbackContent> </FallbackContent>
 </template>
 
 <style scoped></style>
